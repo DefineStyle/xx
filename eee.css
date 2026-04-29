@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: "Comic Sans MS", "Patrick Hand";
+  font-family: "Comic Sans MS", "Patrick Hand", sans-serif;
   padding: 15px;
 }
 
