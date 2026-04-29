@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sm7ili 🥲</title>
+
+  <link rel="stylesheet" href="eee.css">
+</head>
+
+<body>
+
+  <div id="intro">
+    <div class="click-box" onclick="enterSite()">
+      Click
+    </div>
+  </div>
+
+  <div id="page" class="blurred">
+
+    <div class="card">
+
+      <div class="heart">💔</div>
+
+      <h1>Smo7at</h1>
+
+      <p>
+Db 3arf rasi ghalt…  
+wlkn wlah man3awd
+
+3arf bli ana fia gha sda3 ras  
+walakin bghit nsl7 hadchi 🥲
+
+a5er mera wlah
+      </p>
+
+      <div class="image-box">
+        <img src="pp.jpg" alt="memory">
+      </div>
+
+      <p class="fnl">
+        <i>I care about you more than you think</i>
+      </p>
+
+      <div class="footer">
+        please?
+      </div>
+
+    </div>
+
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function enterSite() {
+      const page = document.getElementById("page");
+      const intro = document.getElementById("intro");
+      const music = document.getElementById("bgMusic");
+
+      page.classList.remove("blurred");
+      intro.style.opacity = "0";
+
+      setTimeout(() => {
+        intro.style.display = "none";
+      }, 600);
+
+      music.volume = 0.3;
+      music.play().catch(() => {
+        document.body.addEventListener("click", () => {
+          music.play();
+        }, { once: true });
+      });
+    }
+  </script>
+
+</body>
+</html>
