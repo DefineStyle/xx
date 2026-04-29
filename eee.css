@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #ffe4ec, #fff7f9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Comic Sans MS", cursive;
+  padding: 15px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 44px;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.heart {
+  font-size: 42px;
+  animation: beat 1s infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
+  white-space: pre-line;
+  margin-bottom: 20px;
+}
+
+.image-box {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fnl {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  background: rgba(255, 228, 236, 0.6);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  z-index: 999;
+}
+
+#intro div {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+#page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
